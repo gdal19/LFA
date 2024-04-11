@@ -183,3 +183,13 @@ automata.accept("00000229") #Caso com formato de data ddmmyyyy
 automata_nfa = automata.get_nfa()
 automata_nfa.accept("00040229")
 
+# estilo default
+automata.view("afd01")
+
+# estilo personalizado
+automata.view(
+    file_name="afd01_personalizado",
+    node_attr={'fontsize': '20'},
+    edge_attr={'fontsize': '20pt'}
+)
+
